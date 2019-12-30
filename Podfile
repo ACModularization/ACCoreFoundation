@@ -1,11 +1,12 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
-source 'https://github.com/ACModularization/Specs.git'
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 use_frameworks!
 
 target 'ACCoreFoundation' do
- 
+    
+    pod "AFNetworking"
+
 end

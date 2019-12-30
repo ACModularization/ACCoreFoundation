@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ACCoreFoundation"
-  s.version      = "1"
+  s.version      = "0.0.1"
   s.summary      = "ACCoreFoundation."
 
   # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "CasaTaloyum" => "casatwy@msn.com" }
+  s.author             = { "Ace" => "aoe.orz@gmail.com" }
   # Or just: s.author    = "CasaTaloyum"
   # s.authors            = { "CasaTaloyum" => "casatwy@msn.com" }
   # s.social_media_url   = "http://twitter.com/CasaTaloyum"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ACCoreFoundation/ACCoreFoundation/**/*.{h,m,swift}"
+  s.source_files  = "https://cdn.cocoapods.org//**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -117,6 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
+  s.frameworks = "ACCoreFoundation/ACCoreFoundation/*.framework"
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
@@ -137,4 +138,7 @@ Pod::Spec.new do |s|
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
 
+  s.dependency "AFNetworking"
+
 end
+

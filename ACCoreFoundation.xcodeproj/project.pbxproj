@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		502A8C84237BF0DD0084AE40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A8C83237BF0DD0084AE40 /* main.m */; };
 		502A8C8E237BF0DD0084AE40 /* ACCoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A8C8D237BF0DD0084AE40 /* ACCoreFoundationTests.m */; };
 		502A8C99237BF0DD0084AE40 /* ACCoreFoundationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A8C98237BF0DD0084AE40 /* ACCoreFoundationUITests.m */; };
+		50494C5C23B993A000A5B1F2 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50494C5B23B993A000A5B1F2 /* Bugly.framework */; };
+		8076085031C240FECDA4C92C /* Pods_ACCoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		502A8C94237BF0DD0084AE40 /* ACCoreFoundationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACCoreFoundationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		502A8C98237BF0DD0084AE40 /* ACCoreFoundationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACCoreFoundationUITests.m; sourceTree = "<group>"; };
 		502A8C9A237BF0DD0084AE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50494C5B23B993A000A5B1F2 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		9A47DCB219A826DABE56D460 /* Pods-ACCoreFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCoreFoundation.release.xcconfig"; path = "Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation.release.xcconfig"; sourceTree = "<group>"; };
+		9C059F222E85E8946E19F6D0 /* Pods-ACCoreFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCoreFoundation.debug.xcconfig"; path = "Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCoreFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50494C5C23B993A000A5B1F2 /* Bugly.framework in Frameworks */,
+				8076085031C240FECDA4C92C /* Pods_ACCoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,8 @@
 				502A8C8C237BF0DD0084AE40 /* ACCoreFoundationTests */,
 				502A8C97237BF0DD0084AE40 /* ACCoreFoundationUITests */,
 				502A8C6F237BF0DC0084AE40 /* Products */,
+				B9FF9AFA89F19174CF302285 /* Pods */,
+				80B2376D7E11CB014AAB0ED0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +114,7 @@
 		502A8C70237BF0DC0084AE40 /* ACCoreFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				50494C5923B9929E00A5B1F2 /* ACCoreFoundation */,
 				502A8C71237BF0DC0084AE40 /* AppDelegate.h */,
 				502A8C72237BF0DC0084AE40 /* AppDelegate.m */,
 				502A8C74237BF0DC0084AE40 /* SceneDelegate.h */,
@@ -137,6 +148,31 @@
 			path = ACCoreFoundationUITests;
 			sourceTree = "<group>";
 		};
+		50494C5923B9929E00A5B1F2 /* ACCoreFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				50494C5B23B993A000A5B1F2 /* Bugly.framework */,
+			);
+			path = ACCoreFoundation;
+			sourceTree = "<group>";
+		};
+		80B2376D7E11CB014AAB0ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9FF9AFA89F19174CF302285 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C059F222E85E8946E19F6D0 /* Pods-ACCoreFoundation.debug.xcconfig */,
+				9A47DCB219A826DABE56D460 /* Pods-ACCoreFoundation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 502A8C9D237BF0DD0084AE40 /* Build configuration list for PBXNativeTarget "ACCoreFoundation" */;
 			buildPhases = (
+				85C30DC8740EA66E9A313AF6 /* [CP] Check Pods Manifest.lock */,
 				502A8C6A237BF0DC0084AE40 /* Sources */,
 				502A8C6B237BF0DC0084AE40 /* Frameworks */,
 				502A8C6C237BF0DC0084AE40 /* Resources */,
+				D6571BAA5E17D02BFB58E292 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +299,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85C30DC8740EA66E9A313AF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACCoreFoundation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6571BAA5E17D02BFB58E292 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		502A8C6A237BF0DC0084AE40 /* Sources */ = {
@@ -437,10 +517,15 @@
 		};
 		502A8C9E237BF0DD0084AE40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C059F222E85E8946E19F6D0 /* Pods-ACCoreFoundation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V896B95CGK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ACCoreFoundation/ACCoreFoundation",
+				);
 				INFOPLIST_FILE = ACCoreFoundation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,10 +539,15 @@
 		};
 		502A8C9F237BF0DD0084AE40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A47DCB219A826DABE56D460 /* Pods-ACCoreFoundation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V896B95CGK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ACCoreFoundation/ACCoreFoundation",
+				);
 				INFOPLIST_FILE = ACCoreFoundation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
