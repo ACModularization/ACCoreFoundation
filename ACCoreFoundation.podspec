@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "https://cdn.cocoapods.org//**/*.{h,m,swift}"
+  s.source_files  = "ACCoreFoundation/ACCoreFoundation/**/*.{h,m,swift}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -105,6 +105,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
+  # s.resources = "ACCoreFoundation/ACCoreFoundation/*.{bundle,png,jpg,json}", "ACCoreFoundation/ACCoreFoundation/*.strings"
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
@@ -117,12 +118,12 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.frameworks = "ACCoreFoundation/ACCoreFoundation/*.framework"
+  s.ios.vendored_frameworks = "ACCoreFoundation/Frameworks/*.framework"
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "SystemConfiguration", "Security", "JavaScriptCore"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "z", "c++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

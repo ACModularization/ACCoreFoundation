@@ -9,9 +9,9 @@ sed -i "" "${LineNumber}s/${VersionNumber}/${NewVersionNumber}/g" ACCoreFoundati
 
 echo "current version is ${VersionNumber}, new version is ${NewVersionNumber}"
 
-git add .
-git commit -am ${NewVersionNumber}
-git tag ${NewVersionNumber}
-git push origin master --tags
-pod repo push PrivatePods ACCoreFoundation.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
+#git add .
+#git commit -am ${NewVersionNumber}
+#git tag ${NewVersionNumber}
+#git push origin master --tags
+pod repo push ACSpecs ACCoreFoundation.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
 

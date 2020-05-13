@@ -17,6 +17,11 @@
 		502A8C8E237BF0DD0084AE40 /* ACCoreFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A8C8D237BF0DD0084AE40 /* ACCoreFoundationTests.m */; };
 		502A8C99237BF0DD0084AE40 /* ACCoreFoundationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A8C98237BF0DD0084AE40 /* ACCoreFoundationUITests.m */; };
 		50494C5C23B993A000A5B1F2 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50494C5B23B993A000A5B1F2 /* Bugly.framework */; };
+		50494C8923B9CAEB00A5B1F2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 50494C8823B9CAEB00A5B1F2 /* libc++.tbd */; };
+		50494C8D23B9CAFE00A5B1F2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50494C8C23B9CAFE00A5B1F2 /* Security.framework */; };
+		50494C8F23B9CB0A00A5B1F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50494C8E23B9CB0A00A5B1F2 /* SystemConfiguration.framework */; };
+		508D9DA7246BF34900414E50 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 508D9DA6246BF34900414E50 /* libz.tbd */; };
+		508D9DA9246BF3C700414E50 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508D9DA8246BF3C700414E50 /* JavaScriptCore.framework */; };
 		8076085031C240FECDA4C92C /* Pods_ACCoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,15 @@
 		502A8C98237BF0DD0084AE40 /* ACCoreFoundationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACCoreFoundationUITests.m; sourceTree = "<group>"; };
 		502A8C9A237BF0DD0084AE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50494C5B23B993A000A5B1F2 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		50494C8623B9CAE300A5B1F2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		50494C8823B9CAEB00A5B1F2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		50494C8A23B9CAF400A5B1F2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		50494C8C23B9CAFE00A5B1F2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		50494C8E23B9CB0A00A5B1F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		50494C9023B9CB3200A5B1F2 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		508D9DA6246BF34900414E50 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		508D9DA8246BF3C700414E50 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		508D9DAB246C0F2100414E50 /* ACMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACMacros.h; sourceTree = "<group>"; };
 		9A47DCB219A826DABE56D460 /* Pods-ACCoreFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCoreFoundation.release.xcconfig"; path = "Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation.release.xcconfig"; sourceTree = "<group>"; };
 		9C059F222E85E8946E19F6D0 /* Pods-ACCoreFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACCoreFoundation.debug.xcconfig"; path = "Target Support Files/Pods-ACCoreFoundation/Pods-ACCoreFoundation.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACCoreFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508D9DA7246BF34900414E50 /* libz.tbd in Frameworks */,
+				50494C8923B9CAEB00A5B1F2 /* libc++.tbd in Frameworks */,
+				50494C8F23B9CB0A00A5B1F2 /* SystemConfiguration.framework in Frameworks */,
+				508D9DA9246BF3C700414E50 /* JavaScriptCore.framework in Frameworks */,
+				50494C8D23B9CAFE00A5B1F2 /* Security.framework in Frameworks */,
 				50494C5C23B993A000A5B1F2 /* Bugly.framework in Frameworks */,
 				8076085031C240FECDA4C92C /* Pods_ACCoreFoundation.framework in Frameworks */,
 			);
@@ -115,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				50494C5923B9929E00A5B1F2 /* ACCoreFoundation */,
+				508D9DAA246C0EA700414E50 /* Frameworks */,
 				502A8C71237BF0DC0084AE40 /* AppDelegate.h */,
 				502A8C72237BF0DC0084AE40 /* AppDelegate.m */,
 				502A8C74237BF0DC0084AE40 /* SceneDelegate.h */,
@@ -151,14 +171,30 @@
 		50494C5923B9929E00A5B1F2 /* ACCoreFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				50494C5B23B993A000A5B1F2 /* Bugly.framework */,
+				508D9DAB246C0F2100414E50 /* ACMacros.h */,
 			);
 			path = ACCoreFoundation;
+			sourceTree = "<group>";
+		};
+		508D9DAA246C0EA700414E50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50494C5B23B993A000A5B1F2 /* Bugly.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		80B2376D7E11CB014AAB0ED0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				508D9DA8246BF3C700414E50 /* JavaScriptCore.framework */,
+				508D9DA6246BF34900414E50 /* libz.tbd */,
+				50494C9023B9CB3200A5B1F2 /* libz.1.2.5.tbd */,
+				50494C8E23B9CB0A00A5B1F2 /* SystemConfiguration.framework */,
+				50494C8C23B9CAFE00A5B1F2 /* Security.framework */,
+				50494C8A23B9CAF400A5B1F2 /* Accelerate.framework */,
+				50494C8823B9CAEB00A5B1F2 /* libc++.tbd */,
+				50494C8623B9CAE300A5B1F2 /* libresolv.tbd */,
 				DBF120203907FBFC2FE611B5 /* Pods_ACCoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -260,6 +296,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 502A8C65237BF0DC0084AE40;
 			productRefGroup = 502A8C6F237BF0DC0084AE40 /* Products */;
